@@ -14,7 +14,7 @@ if len(sys.argv) < 4:
 login = sys.argv[2]
 password = sys.argv[3]
 implicit_delay = 10
-explicit_delay = 10
+explicit_delay = 30
 
 driver = webdriver.Firefox()
 driver.implicitly_wait(implicit_delay)
