@@ -16,7 +16,7 @@ password = sys.argv[3]
 implicit_delay = 10
 explicit_delay = 10
 
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 driver.implicitly_wait(implicit_delay)
 
 class_url = sys.argv[1]
@@ -47,10 +47,6 @@ links = WebDriverWait(driver, explicit_delay).until(
 topic_links = []
 for link in links:
     topic_links.append(link.get_attribute('href'))
-
-print(topic_links)
-print(len(topic_links))
-raw_input('Press the <ENTER> key to continue...')
 
 topic = 1
 for topic_link in topic_links:
