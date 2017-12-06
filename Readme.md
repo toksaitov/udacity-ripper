@@ -8,11 +8,14 @@ course pages to extract all the lesson YouTube links.
 
 * *Python* `>= 2.7`
 * *Selenium* `>= 3.8.0`
+* Firefox, geckodriver `>= 57.0.1`, `>= 0.19.1`
 
 # Usage
 
+Install Firefox and the geckodriver first.
+
 ```bash
-pip install selenium
+pip install -r requirements.txt
 python udacity-ripper.py <CLASS URL> <LOGIN> <PASSWORD>
 ```
 
